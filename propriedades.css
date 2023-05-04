@@ -1,0 +1,85 @@
+html {
+    font-size: 14px;
+    position: relative;
+    min-height: 100%;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+body {
+    font-family: verdana, sans-serif;
+    font-size: 18px;
+    margin-bottom: 60px;
+}
+
+.coluna {
+    float: left;
+    width: 45%;
+    padding: 10px;
+    margin: 5px;
+    border: darkblue 1px solid;
+}
+
+.coluna-2 {
+    display: block;
+    width: 45%;
+    padding: 10px;
+    margin: 5px;
+}
+
+.limpar {
+    clear: both;
+}
+
+select, input[type="text"], input[type="radio"], input[type="checkbox"] {
+    background-color: white;
+    color: darkblue;
+}
+
+select:hover, input[type="text"]:hover, input[type="radio"]:hover, input[type="checkbox"]:hover {
+    background-color: lightgray;
+}
+
+input[type="radio"]:checked {
+    background-color: darkblue;
+    color: white;
+}
+
+input {
+    resize: none;
+    width: 90%;
+    margin: 5px 0px;
+    padding: 5px;
+    border: 0px;
+    border-bottom: darkblue 1px solid;
+}
+
+div {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: darkblue;
+    align-content: flex-start;
+}
+
+.botao {
+    width: 60px;
+    height: 30px;
+    color: darkblue;
+    border: darkblue 1px solid;
+}
+
+h2 {
+    font-family: arial;
+    margin: 20px -11px 0px -11px;
+    background-color: darkblue;
+    color: white;
+}
+
+p{
+    font-size:12px;
+    color: darkblue;
+}

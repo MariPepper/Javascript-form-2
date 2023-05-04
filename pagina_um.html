@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="propriedades.css" type="text/css" />
+    <script src="primeiro.js"></script>
+    <title>Empréstimos - Formulário</title>
+</head>
+
+<body onload="janela()" onresize="janela()">
+    <div id="formulario">
+        <div class="coluna-2">
+        <h2>Empréstimos - Formulário</h2>
+        </div>
+        <form action="pagina_dois.html" method="post" enctype="multipart/form-data">
+            <div class="coluna">
+                <p>Escolha o valor: <input type="radio" name="valor" id="a" style="width:30px">1500€
+                    <input type="radio" name="valor" id="b" style="width:30px">2000€</p>
+                    <br />
+                <p><label>Taxa de juro:</label></p>
+                <select id="juro">
+                    <option value="1%">Taxa de 1%</option>
+                    <option value="5%">Taxa de 5%</option>
+                    <option value="10%">Taxa de 10%</option>
+                    <option value="15%">Taxa de 15%</option>
+                </select>
+                <p><input type="text" name="anos" id="anos" placeholder="Anos: 1"></p>
+
+                <p><label>Valor do rendimento:</label></p>
+                <select id="rendimento">
+                    <option value="rm1">inferior a 700</option>
+                    <option value="rm2">superior a 700</option>
+                </select>
+                <p><input type="text" name="rm3" id="rm3" placeholder="Valor: 0"></p>
+
+                <p><label>Capital próprio:</label></p>
+                <select id="capital">Capital próprio:
+                    <option value="c1">pessoa singular</option>
+                    <option value="c2">pessoa coletiva - empresa</option>
+                </select>
+                <p><input type="text" name="c3" id="c3" placeholder="Valor: 0"></p>
+
+                <p><input type="submit" class="botao" value="Enviar" onclick="copiarInfo()">
+                    <input type="reset" class="botao" value="Repor" onclick="reporTudo()">
+                </p>
+            </div>
+        </form>
+        <div class="limpar"></div>
+    </div>
+    <p>&nbsp;</p>
+</body>
+
+</html>
